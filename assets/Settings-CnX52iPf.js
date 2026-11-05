@@ -1,0 +1,26 @@
+import{c as o,u as _,r as n,a3 as L,a4 as N,a5 as $,a6 as T,m as O,j as e,P,F as l,R as s,y as d,a7 as A,X as b,J as R,k as z,a8 as B,a9 as D}from"./index-CJZrsfQX.js";import{a as q}from"./EditSheets-Cny2pAj6.js";import{A as G}from"./AssistantKey-Dij7lSbw.js";import{C as I}from"./clock-Dac4Edx9.js";/**
+ * @license lucide-react v0.460.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const E=o("CalendarCheck",[["path",{d:"M8 2v4",key:"1cmpym"}],["path",{d:"M16 2v4",key:"4m81vk"}],["rect",{width:"18",height:"18",x:"3",y:"4",rx:"2",key:"1hopcy"}],["path",{d:"M3 10h18",key:"8toen8"}],["path",{d:"m9 16 2 2 4-4",key:"19s6y9"}]]);/**
+ * @license lucide-react v0.460.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const F=o("IdCard",[["path",{d:"M16 10h2",key:"8sgtl7"}],["path",{d:"M16 14h2",key:"epxaof"}],["path",{d:"M6.17 15a3 3 0 0 1 5.66 0",key:"n6f512"}],["circle",{cx:"9",cy:"11",r:"2",key:"yxgjnd"}],["rect",{x:"2",y:"5",width:"20",height:"14",rx:"2",key:"qneu4z"}]]);/**
+ * @license lucide-react v0.460.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const H=o("ListChecks",[["path",{d:"m3 17 2 2 4-4",key:"1jhpwq"}],["path",{d:"m3 7 2 2 4-4",key:"1obspn"}],["path",{d:"M13 6h8",key:"15sg57"}],["path",{d:"M13 12h8",key:"h98zly"}],["path",{d:"M13 18h8",key:"oe0vm4"}]]);/**
+ * @license lucide-react v0.460.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const J=o("Percent",[["line",{x1:"19",x2:"5",y1:"5",y2:"19",key:"1x9vlm"}],["circle",{cx:"6.5",cy:"6.5",r:"2.5",key:"4mh3h7"}],["circle",{cx:"17.5",cy:"17.5",r:"2.5",key:"1mdrzq"}]]);/**
+ * @license lucide-react v0.460.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const K=o("Tags",[["path",{d:"m15 5 6.3 6.3a2.4 2.4 0 0 1 0 3.4L17 19",key:"1cbfv1"}],["path",{d:"M9.586 5.586A2 2 0 0 0 8.172 5H3a1 1 0 0 0-1 1v5.172a2 2 0 0 0 .586 1.414L8.29 18.29a2.426 2.426 0 0 0 3.42 0l3.58-3.58a2.426 2.426 0 0 0 0-3.42z",key:"135mg7"}],["circle",{cx:"6.5",cy:"9.5",r:".5",fill:"currentColor",key:"5pm5xn"}]]);function U(){var g,j;const{data:t,demo:i,person:h,session:r,signOut:k,today:u}=_(),[f,m]=n.useState(!1),[v,c]=n.useState(!1),x=n.useMemo(()=>L(t),[t]),C=n.useMemo(()=>N(x,t.accounts),[x,t.accounts]),M=n.useMemo(()=>$(t),[t]),y=n.useMemo(()=>T(t,O(u)),[t,u]),a=t.settings,w=t.categories.length,p=((g=t.rules)==null?void 0:g.length)??0,S=i?"Demo mode":(j=r==null?void 0:r.user)==null?void 0:j.email;return e.jsxs(P,{title:"Settings",children:[e.jsxs("section",{className:"mb-6 flex items-center gap-4 rounded-section border border-border bg-card p-4","aria-label":"Signed in",children:[e.jsx("span",{className:"flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-primary text-title2 font-semibold text-primary-foreground","aria-hidden":"true",children:(h??"?").slice(0,1)}),e.jsxs("span",{className:"min-w-0",children:[e.jsx("span",{className:"block text-headline",children:h??"Not set up"}),e.jsx("span",{className:"mt-0.5 block break-words text-subhead text-muted-foreground",children:S})]})]}),e.jsxs(l,{title:"Your Money",children:[e.jsx(s,{to:"/settings/accounts",icon:e.jsx(A,{}),title:"Accounts",subtitle:`${t.accounts.length} accounts`,value:e.jsx(d,{value:C})}),e.jsx(s,{to:"/settings/categories",icon:e.jsx(K,{}),title:"Categories and Budgets",subtitle:`${w} categories`}),"rules"in t?e.jsx(s,{to:"/settings/rules",icon:e.jsx(H,{}),title:"Rules",subtitle:p?`${p} for bank transactions`:"None yet"}):null,e.jsx(s,{onClick:()=>m(!0),icon:e.jsx(J,{}),title:"Tithe, Taxes and Payday",subtitle:`Tithe ${b(+a.tithe_target)} · LLC tax ${b(+a.tax_rate)} · payday ${a.first_payday?R(a.first_payday):"not set"}`})]}),e.jsxs(l,{title:"Tools",children:["month_review_done"in a?e.jsx(s,{to:"/review",icon:e.jsx(E,{}),title:"Month in Review",subtitle:a.month_review_done?`Last done: ${a.month_review_done}${a.month_review_by?` by ${a.month_review_by}`:""}`:"Not done yet"}):null,e.jsx(s,{to:"/budget?view=periods",icon:e.jsx(I,{}),title:"Pay Periods",subtitle:"Two weeks at a time"}),e.jsx(s,{to:"/green-card",icon:e.jsx(F,{}),title:"Green Card",value:e.jsx(d,{value:M.remaining}),valueSub:"remaining"}),e.jsx(s,{to:"/business",icon:e.jsx(B,{}),title:"Favier's Lighthouse LLC",subtitle:"Net profit this month",value:e.jsx(d,{value:y.net}),valueSub:`set aside ${z(y.taxSetAside,{whole:!0})}`})]}),i?null:e.jsx(G,{}),e.jsx(l,{footer:i?"Demo mode: connect the Supabase project to use real data.":"Only Nathan and Lyra can open this data. The bank sync runs on the home computer.",children:i?e.jsx(s,{title:"Demo",subtitle:"Made-up numbers. Nothing here is real."}):e.jsx(s,{onClick:()=>c(!0),title:e.jsx("span",{className:"text-destructive",children:"Sign Out"})})}),f?e.jsx(q,{onClose:()=>m(!1)}):null,e.jsx(D,{open:v,onOpenChange:c,message:"The numbers saved on this phone are removed. Sign in again to see them.",actions:[{label:"Sign Out",destructive:!0,onSelect:()=>{c(!1),k()}}]})]})}export{U as default};
